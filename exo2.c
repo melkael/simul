@@ -25,7 +25,7 @@ int main(){
 	double avgPrec = 1;
 	double avgVide;
 	for(long int i = 1; i < 10e6; i++){
-		if(fabs(avgPrec - avg) < epsilon  && temps > 1000){
+		if(fabs(avgPrec - avg) < epsilon  && i > 1000){
 			printf("Early stop : %d\n", i);
 			break;
 		}
